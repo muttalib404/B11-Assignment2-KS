@@ -7,13 +7,56 @@
     font-weight: 400;
     font-style: normal;
   }
-  /* Shared Style */
-  .display-flex{
+  /*Shared Style*/
+
+  .flex {
     display: flex;
   }
+  .align {
+    align-items: center;
+  }
+  .justify {
+    justify-content: center;
+  }
+
+  /* .display-flex{
+    display: flex;
+  } */
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 10%;
+  }
+
+  .menu::before {
+    content: "\2630";
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .logo span {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  nav ul li a {
+    text-decoration: none;
+  }
+
+   #banner{
+    display: flex;
+    gap: 2.8rem ;
+   }
  .contact{
     border-radius: 12px;
     background-color: #FEA301;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 20px 30px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    
  }
  .enroll{
     border-radius: 12px;
@@ -22,9 +65,7 @@
 
 
  }
-  body{
-    margin: 8.8rem;
-  }
+  
 
 
 
@@ -35,26 +76,69 @@
   /* Navbar related Style */
   .nav-item{
     list-style: none;
+    text-decoration: none;
     margin-right: 32px;
     
   }
+
   .nav-links{
-    text-decoration: none;
-    
+    display: flex;
+    justify-items: left;
+  }
+  .nav-orange{
+    color: #FEA301;
+  }
+  .nav-skyblue{
+    color: #01ACFD;
+  }
+  .nav-pest{
+    color: #05D4DF;
+  }
+  .nav-purple{
+    color: #5D58EF;
   }
   /* .navbar{
     justify-content: space-between;
     width: 72.5rem;
     height: 3.8rem;
   } */
-button{
-    width: 197px;
-    height: 50px;
+
+/*banner*/
+.orange{
+  color: #FEA301;
+}
+#banner{
+  margin-bottom: 3.8rem;
+}
+.banner-container{
+  width: 40rem;
+  height: 11.4rem;
+  font-size: 2rem;
+}
+.banner-description{
+  font-size: 1rem;
+}
+.skyblue{
+  color: #01ACFD;
 }
 /* Section Style */
 .curriculam-container{
-    display: flex start;
+  display: flex;
+  width: 1160px;
+  height: 431px;
 }
+.curriculum-title{
+  align-items: center;
+}
+.card-1{
+  text-align: center;
+  border: .5px solid #DEF5FF;
+  border-radius: 18px;
+  
+  
+  gap: 28px;
+}
+
 /* card related style */
 /* .card-1{
     width: 367.8px;
@@ -68,6 +152,49 @@ button{
     height: 111px;
     padding: 20px 100px;
 } */
-  #id{
+
+/*story*/
+
+
+.stories-container{
+  display: flex;
+  width: 1160px;
+  height: 630px;
+  
+}
+.stories-sub-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 19px;
+  
+}
+  #footer{
     display: flex;
+    justify-content: space-between;
+  }
+
+  @media screen and (max-width:576px) {
+    nav, .btn-container {
+      display: none;
+    }
+    .menu {
+      display: block;
+    }
+    .logo span {
+      display: none;
+    }
+    header {
+      border-bottom: 2px solid #FEA301;
+    }
+
+
+
+
+  }
+
+  @media screen and  (min-width:993px) {
+    .menu {
+      display: none;
+    }
+    
   }
