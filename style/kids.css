@@ -142,6 +142,10 @@
 #curriculum {
   padding: 40px 10%;
   text-align: center;
+  background-image: url("/assets/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .curriculam-container {
@@ -213,6 +217,20 @@
   color: var(--third-color);
 }
 
+.car-nav i {
+  padding: 10px;
+  margin: 5px;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 50%;
+}
+
+.car-nav {
+  margin-top: 30px;
+}
+
 
 
 
@@ -243,6 +261,14 @@
     .curriculam-container {
       flex-direction: column;
     }
+
+    .car-nav {
+      display: none;
+    }
+
+    
+
+    
 
 
 
