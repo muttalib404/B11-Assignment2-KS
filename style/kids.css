@@ -17,6 +17,11 @@
 
   }
 
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
   .flex {
     display: flex;
   }
@@ -287,6 +292,43 @@
 
 }
 
+/* Footer */
+
+footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 220px;
+  background-color: var(--secondary-color);
+  padding: 40px 10%;
+  color: white;
+}
+
+.kids-education {
+  max-width: 550px;
+}
+
+.kids-education img {
+  width: 80px;
+}
+
+.kids-education>div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.about-school h3, .keep-in-touch h3 {
+  font-size: 1.3rem;
+  
+}
+
+.about-school li {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
 
 
 
@@ -332,6 +374,11 @@
       padding: 30px 3%;
     }
 
+    footer {
+      flex-direction: column;
+      gap: 40px;
+    }
+
 
   }
 
@@ -342,8 +389,5 @@
     
   }
 
-  .hide {
-    display: none;
-  }
 
  
