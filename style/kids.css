@@ -157,7 +157,7 @@
 
 .section-title {
   font-size: 2.9rem;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 
 .car-card img {
@@ -231,6 +231,62 @@
   margin-top: 50px;
 }
 
+/* Stories */
+
+#stories {
+  padding: 100px 10%;
+  background-image: url("../assets/bg.png"), linear-gradient(to top, rgba(254, 163, 1, .5), rgba(255, 255, 255, 0));
+  background-position: top right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.stories-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.stories-sub-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.s-card img {
+  width: 100%;
+}
+
+.s-card {
+  border-radius: 18px;
+  overflow: hidden;
+  background-color: white;
+  text-align: left;
+  position: relative;
+  
+}
+
+.s-card>div {
+  padding: 10px 30px 20px;
+}
+
+#stories>button {
+  background-color: black;
+  margin-top: 80px;
+}
+
+.s-card button {
+  position: relative;
+  top: -45px;
+  background-color: #01ACFD;
+  padding: 20px;
+  color: white;
+  border-radius: 16px;
+  border: none;
+  font-size: 1rem;
+
+}
+
 
 
 
@@ -265,12 +321,16 @@
     .car-nav {
       display: none;
     }
+    .stories-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
 
-    
-
-    
-
-
+    .stories-single {
+      display: none;
+    }
+    #stories {
+      padding: 30px 3%;
+    }
 
 
   }
