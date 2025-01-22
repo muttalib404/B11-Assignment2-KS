@@ -142,7 +142,7 @@
 #curriculum {
   padding: 40px 10%;
   text-align: center;
-  background-image: url("/assets/bg.png");
+  background-image: url("../assets/bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
