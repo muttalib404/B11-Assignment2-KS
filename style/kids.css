@@ -12,6 +12,9 @@
   :root {
     --primary-color: orange;
     --secondary-color: rgba(1, 172, 253, 1);
+    --third-color: rgba(127, 33, 250, 1);
+    --paragraph-color: #808080;
+
   }
 
   .flex {
@@ -134,6 +137,81 @@
   color: var(--secondary-color);
 }
 
+/* Curriculum */
+
+#curriculum {
+  padding: 40px 10%;
+  text-align: center;
+}
+
+.curriculam-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.section-title {
+  font-size: 2.9rem;
+  margin-bottom: 40px;
+}
+
+.car-card img {
+  width: 150px;
+  height: 150px;
+}
+
+.car-card {
+  padding: 40px;
+  border: 1px solid black;
+  border-radius: 12px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.car-card p {
+  color: var(--paragraph-color);
+  font-size: 1rem;
+  line-height: 25px;
+}
+
+.card-1 {
+  background-image: linear-gradient(to bottom, rgba(222, 245, 255, 1), rgba(255, 255, 255, 0));
+  border: 1px solid rgba(222, 245, 255, 1);
+}
+
+.card-2 {
+  background-image: linear-gradient(to bottom, rgba(255, 244, 220, 1), rgba(255, 255, 255, 0));
+  border: 1px solid rgba(255, 244, 220, 1);
+}
+
+.card-3 {
+  background-image: linear-gradient(to bottom, rgba(238, 225, 255, 1), rgba(255, 255, 255, 0));
+  border: 1px solid rgba(242, 232, 255, 1);
+}
+
+.car-card a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+
+}
+
+.card-1 a {
+  color: var(--secondary-color);
+}
+
+.card-2 a {
+  color: var(--primary-color);
+}
+
+.card-3 a {
+  color: var(--third-color);
+}
 
 
 
@@ -160,6 +238,10 @@
     }
     .banner-container {
       text-align: center;
+    }
+
+    .curriculam-container {
+      flex-direction: column;
     }
 
 
